@@ -12,7 +12,7 @@
     <description>@description@</description>
     <releaseNotes>@releaseNotes@</releaseNotes>
     <copyright>Copyright AutoScout24 2013</copyright>
-    <tags>AutoScout24 FeatureBee FeatureToggle</tags>
+    <tags>FeatureBee FeatureToggle Toggle Bits Flags AutoScout24</tags>
     @dependencies@
   </metadata>
 </package>
