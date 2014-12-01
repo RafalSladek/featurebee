@@ -1,11 +1,12 @@
-﻿using System;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading;
-using FeatureBee.WireUp;
-
-namespace FeatureBee.Evaluators
+﻿namespace FeatureBee.Conditions
 {
+    using System;
+    using System.Linq;
+    using System.Security.Claims;
+    using System.Threading;
+
+    using FeatureBee.WireUp;
+
     internal class ClaimConditionEvaluator : IConditionEvaluator<WebApplicationContext>
     {
         public string Name { get { return "claim"; } }

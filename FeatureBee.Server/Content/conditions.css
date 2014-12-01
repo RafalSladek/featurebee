@@ -72,3 +72,19 @@
         background-color: #1b903d;
         border-color: #187f36;
     }
+    
+.label-public-ip {
+    background-color: #336699;
+}
+
+.btn-public-ip {
+    color: #ffffff;
+    background-color: #336699;
+    border-color: #336699;
+}
+
+    .btn-public-ip:hover, .btn-public-ip:focus, .btn-public-ip:active, .btn-public-ip.active, .open .dropdown-toggle.btn-public-ip {
+        color: #ffffff;
+        background-color: #336699;
+        border-color: #336688;
+    }

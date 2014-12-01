@@ -3,7 +3,7 @@
     using System.Collections.Generic;
     using System.Web;
 
-    using FeatureBee.Evaluators;
+    using FeatureBee.Conditions;
     using FeatureBee.WireUp;
 
     using Moq;

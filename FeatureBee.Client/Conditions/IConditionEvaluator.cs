@@ -1,4 +1,4 @@
-﻿namespace FeatureBee.Evaluators
+﻿namespace FeatureBee.Conditions
 {
     public interface IConditionEvaluator<T> : IConditionEvaluator
     {

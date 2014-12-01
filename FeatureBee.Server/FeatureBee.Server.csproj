@@ -377,6 +377,7 @@
     <Content Include="Views\Feature\EditTemplate.cshtml" />
     <Content Include="Scripts\jquery-2.0.3.min.map" />
     <Content Include="Views\Feature\BoardTemplate.cshtml" />
+    <Content Include="Views\Conditions\PublicIp.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

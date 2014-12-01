@@ -1,10 +1,10 @@
-﻿using System.Linq;
-using System.Web;
-using FeatureBee.WireUp;
-
-namespace FeatureBee.Evaluators
+﻿namespace FeatureBee.Conditions
 {
     using System;
+    using System.Linq;
+    using System.Web;
+
+    using FeatureBee.WireUp;
 
     public class BrowserConditionEvaluator : IConditionEvaluator<WebApplicationContext>
     {
@@ -13,7 +13,7 @@ namespace FeatureBee.Evaluators
         public string Name { get { return "browser"; } }
         public bool IsFulfilled(string[] values)
         {
-            var currentContext = CurrentContext();
+            var currentContext = this.CurrentContext();
 
             var shouldBeBrowser = values.Where(_ => !_.Contains(":"));
             var shouldNotBeBrowser = values.Where(_ => _.StartsWith("NOT:")).Select(_ => _.Substring(3));

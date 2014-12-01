@@ -1,4 +1,4 @@
-namespace FeatureBee.Evaluators
+namespace FeatureBee.Conditions
 {
     using System;
     using System.Linq;
@@ -27,15 +27,15 @@ namespace FeatureBee.Evaluators
                 return false;
             }
 
-            var uniqueGuid = ReadExistingUniqueGuid(currentContext) ?? SetAndReturnUniqueGuid(currentContext);
+            var uniqueGuid = this.ReadExistingUniqueGuid(currentContext) ?? this.SetAndReturnUniqueGuid(currentContext);
 
             if (uniqueGuid == null)
             {
                 return false;
             }
 
-            var distribution = ConvertDistributionValue(uniqueGuid.Value);
-            return values.Any(value => IsInRange(distribution, value));
+            var distribution = this.ConvertDistributionValue(uniqueGuid.Value);
+            return values.Any(value => this.IsInRange(distribution, value));
         }
 
         private Guid? SetAndReturnUniqueGuid(HttpContext currentContext)

@@ -9,8 +9,8 @@
     using System.Text;
     using System.Web;
 
+    using FeatureBee.Conditions;
     using FeatureBee.ConfigSection;
-    using FeatureBee.Evaluators;
     using FeatureBee.UpdateModes;
 
     public class FeatureBeeBuilder

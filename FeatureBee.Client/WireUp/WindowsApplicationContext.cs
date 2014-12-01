@@ -2,14 +2,18 @@ namespace FeatureBee.WireUp
 {
     using System.Collections.Generic;
 
-    using FeatureBee.Evaluators;
+    using FeatureBee.Conditions;
 
     internal class WindowsApplicationContext : IFeatureBeeContext
     {
         public WindowsApplicationContext()
         {
             GodModeFeatures = new GodModeFeatureCollection(); // Not supported, yet
-            IsDebugMode = false; // Not supported, yet
+#if DEBUG
+            IsDebugMode = true;
+#else
+            IsDebugMode = false;
+#endif
         }
 
         public List<IConditionEvaluator> Evaluators { get; set; }

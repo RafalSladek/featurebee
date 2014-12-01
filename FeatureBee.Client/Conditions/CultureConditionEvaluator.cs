@@ -1,4 +1,4 @@
-﻿namespace FeatureBee.Evaluators
+﻿namespace FeatureBee.Conditions
 {
     using System;
     using System.Linq;

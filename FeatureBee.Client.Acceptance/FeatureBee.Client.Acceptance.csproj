@@ -98,7 +98,12 @@
       <DependentUpon>Conditions.feature</DependentUpon>
     </Compile>
     <Compile Include="Units\BrowserConditions\MobileBrowserConditionSpecs.cs" />
+    <Compile Include="Units\EnabledEvaluators\ConditionBasedEvaluatorSpecs.cs" />
+    <Compile Include="Units\EnabledEvaluators\GodModeEvalutorSpecs.cs" />
+    <Compile Include="Units\EnabledEvaluators\IsReleasedEvalutorSpecs.cs" />
+    <Compile Include="Units\EnabledEvaluators\NoSuchFeatureEvalutorSpecs.cs" />
     <Compile Include="Units\HttpHandlerRouting\FeaturesSpecs.cs" />
+    <Compile Include="Units\HttpHandlerRouting\GodMode\FeatureSerializerSpecs.cs" />
     <Compile Include="Units\HttpHandlerRouting\GodMode\GodModeFromHttpCookieSpecs.cs" />
     <Compile Include="Units\HttpHandlerRouting\GodMode\GodModeFromHttpHeaderSpecs.cs" />
     <Compile Include="Units\HttpHandlerRouting\GodMode\GodModeFromQueryStringSpecs.cs" />

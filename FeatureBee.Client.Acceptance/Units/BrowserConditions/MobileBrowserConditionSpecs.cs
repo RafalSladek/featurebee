@@ -2,7 +2,7 @@
 {
     using System.Web;
 
-    using FeatureBee.Evaluators;
+    using FeatureBee.Conditions;
 
     using FluentAssertions;
 

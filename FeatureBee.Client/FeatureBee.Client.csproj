@@ -60,17 +60,26 @@
     <Compile Include="..\SolutionInfo.cs">
       <Link>Properties\SolutionInfo.cs</Link>
     </Compile>
+    <Compile Include="Conditions\PublicIPConditionEvaluator.cs" />
+    <Compile Include="FeatureStates\ConditionBasedEvaluator.cs" />
+    <Compile Include="FeatureStates\GodModeEvaluator.cs" />
+    <Compile Include="FeatureStates\IEvaluateFeatures.cs" />
+    <Compile Include="FeatureStates\InDevelopmentEvaluator.cs" />
+    <Compile Include="FeatureStates\IsReleasedEvalutor.cs" />
+    <Compile Include="FeatureStates\NoSuchFeatureEvaluator.cs" />
     <Compile Include="FeatureEvaluator.cs" />
     <Compile Include="ConfigSection\FeatureBeeSettingsConfig.cs" />
-    <Compile Include="Evaluators\TrafficDistributionConditionEvaluator.cs" />
+    <Compile Include="Conditions\TrafficDistributionConditionEvaluator.cs" />
     <Compile Include="GodMode\GetGodModeFeaturesFromCookies.cs" />
     <Compile Include="GodMode\GetGodModeFeaturesFromHttpHeader.cs" />
     <Compile Include="GodMode\GetGodModeFeaturesFromQueryString.cs" />
     <Compile Include="GodMode\ICanGetGodModeStates.cs" />
     <Compile Include="GodMode\ParseValues.cs" />
+    <Compile Include="GodMode\FeatureSerializer.cs" />
     <Compile Include="HttpHandlerRouting\Features.cs" />
     <Compile Include="HttpHandlerRouting\IHandleARoute.cs" />
     <Compile Include="HttpHandlerRouting\NoRouteFound.cs" />
+    <Compile Include="JavascriptClient.cs" />
     <Compile Include="UpdateModes\FeatureCache\InMemoryCache.cs" />
     <Compile Include="UpdateModes\FeatureCache\TimeLimitedInMemoryCache.cs" />
     <Compile Include="UpdateModes\FeatureCache\TimeLimitedInMemoryFeatureBeeCache.cs" />
@@ -85,10 +94,10 @@
     <Compile Include="ConfigSection\FeatureBeeTrayConfig.cs" />
     <Compile Include="WireUp\GodModeFeatureCollection.cs" />
     <Compile Include="WireUp\UpdateMode.cs" />
-    <Compile Include="Evaluators\BrowserConditionEvaluator.cs" />
-    <Compile Include="Evaluators\ClaimConditionEvaluator.cs" />
-    <Compile Include="Evaluators\CultureConditionEvaluator.cs" />
-    <Compile Include="Evaluators\IConditionEvaluator.cs" />
+    <Compile Include="Conditions\BrowserConditionEvaluator.cs" />
+    <Compile Include="Conditions\ClaimConditionEvaluator.cs" />
+    <Compile Include="Conditions\CultureConditionEvaluator.cs" />
+    <Compile Include="Conditions\IConditionEvaluator.cs" />
     <Compile Include="WireUp\FeatureDto.cs" />
     <Compile Include="Feature.cs" />
     <Compile Include="WireUp\FeatureBeeBuilder.cs" />

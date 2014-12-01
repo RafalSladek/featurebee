@@ -19,7 +19,8 @@
     var conditionsController = new ConditionController([
         { type: "trafficDistribution", values : [] },
         { type: "culture", values: [] },
-        { type: "browser", values: [] }
+        { type: "browser", values: [] },
+        { type: "public-ip", values: [] }
     ]);
     var featureController = new FeatureBeeController(boardHub, editPanelHub, request, conditionsController);
     var form;

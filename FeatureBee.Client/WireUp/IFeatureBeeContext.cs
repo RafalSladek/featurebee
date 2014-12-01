@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    using FeatureBee.Evaluators;
+    using FeatureBee.Conditions;
 
     internal interface IFeatureBeeContext
     {
