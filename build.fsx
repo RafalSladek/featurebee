@@ -114,7 +114,8 @@ Target "AcceptanceTest" (fun _ ->
 Target "Zip" (fun _ ->
     !! (buildDir + "/_PublishedWebsites/FeatureBee.Server/**/*.*") 
         -- "*.zip"
-        // TODO: Exclude database files
+        -- "**/*.mdf"
+        -- "**/*.ldf"
         |> Zip (buildDir + "/_PublishedWebsites/FeatureBee.Server/") (deployDir + "FeatureBee.Server." + version + ".zip")
 )
 
