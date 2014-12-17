@@ -6,21 +6,22 @@ namespace FeatureBee
     public static class JavascriptClient
     {
         /// <summary>
-        /// Why not Array.indexof? because it doesn't work on IE 8. 
+        /// Why not Array.indexOf? because it doesn't work in IE 8. 
         /// Why here and not in a seprated JS File? Because it still has just few lines of code.
         /// </summary>
         private const string snippet = "<script>" +
-                                       "featureBeeClient = {{" +
-                                           "enabledToggles : [{0}]," +
-                                           "isEnabled : function(toggleName) {{" +
-                                                "for(var i = 0; i < this.enabledToggles.length; i++){{" +
-                                                    "if(this.enabledToggles[i] === toggleName){{" +
-                                                        "return true;" +
+                                       "featureBeeClient={{" +
+                                           "enabledToggles:[{0}]," +
+                                           "isEnabled:function(toggleName){{" +
+                                                "var t=this.enabledToggles;" +
+                                                "for(var i=0,l=t.length;i<l;i++){{" +
+                                                    "if(t[i]===toggleName){{" +
+                                                        "return !0;" +
                                                     "}}" +
                                                 "}}" +
-                                                "return false;" +
+                                                "return !1;" +
                                            "}}" +
-                                       "}};" +
+                                       "}}" +
                                        "</script>";
 
         public static HtmlString Render()
