@@ -12,7 +12,7 @@ Contact us if you want to help.
 
 ## FeatureBee Server 
 
-The Server distributes the feature state to all registered clients, and is the ui for however is editing the feature state.
+The Server distributes the feature state to all registered clients, and is the ui for whowever is editing the feature state.
 
 ![FeatureBee Server](https://github.com/AutoScout24/FeatureBee/raw/master/documentation/images/Feature%20Bee%20-%20Server.png)
 
