@@ -18,7 +18,7 @@ let projectSummary = projectDescription
 // Directories
 let buildDir        = "./build/"
 let testResultsDir  = "./testresults/"
-let deployDir       = "./deploy/"
+//let deployDir       = "./deploy/"
 let packagingDir    = "./packaging/"
 let websiteDir      = "./build/_PublishedWebsites/"
 
@@ -36,7 +36,7 @@ let buildMode = getBuildParamOrDefault "buildMode" "Release"
 
 // Targets
 Target "Clean" (fun _ -> 
-    CleanDirs [buildDir; testResultsDir; deployDir; packagingDir]
+    CleanDirs [buildDir; testResultsDir; packagingDir]
 )
 
 Target "SetVersion" (fun _ ->
@@ -111,13 +111,13 @@ Target "AcceptanceTest" (fun _ ->
     if result <> 0 then failwith "Failed result from acceptance tests"
 )
 
-Target "Zip" (fun _ ->
-    !! (buildDir + "/_PublishedWebsites/FeatureBee.Server/**/*.*") 
-        -- "*.zip"
-        -- "**/*.mdf"
-        -- "**/*.ldf"
-        |> Zip (buildDir + "/_PublishedWebsites/FeatureBee.Server/") (deployDir + "FeatureBee.Server." + version + ".zip")
-)
+//Target "Zip" (fun _ ->
+//    !! (buildDir + "/_PublishedWebsites/FeatureBee.Server/**/*.*") 
+//        -- "*.zip"
+//        -- "**/*.mdf"
+//        -- "**/*.ldf"
+//        |> Zip (buildDir + "/_PublishedWebsites/FeatureBee.Server/") (deployDir + "FeatureBee.Server." + version + ".zip")
+//)
 
 Target "All" DoNothing
 
@@ -127,9 +127,9 @@ Target "All" DoNothing
   ==> "BuildApp"
   ==> "NUnitTest"
   ==> "MSpecTest"
-  ==> "AcceptanceTest"
+  //==> "AcceptanceTest"
   ==> "CreatePackage"
-  ==> "Zip"
+  //==> "Zip"
   ==> "All"
 
 // start build

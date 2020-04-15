@@ -1,3 +1,6 @@
+### New in 0.3.0 (Released n/a)
+* Recompile after few years
+
 ### New in 0.2.0 (Released n/a)
 * Support push notifications
 

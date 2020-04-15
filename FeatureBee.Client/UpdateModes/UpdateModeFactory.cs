@@ -12,8 +12,8 @@
             {
                 case UpdateMode.Pull:
                     return new Pull(url);
-                case UpdateMode.Push:
-                    return new Push(url);
+               // case UpdateMode.Push:
+               //     return new Push(url);
             }
 
             throw new Exception("Invalid update mode specified");

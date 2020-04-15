@@ -40,7 +40,7 @@ The TrayIcon is displayed on the page, and can be used to turn features off and 
 ![Feature Bee Tray](https://github.com/AutoScout24/FeatureBee/raw/master/documentation/images/Feature%20Bee%20-%20Tray%20Icon.png)
 
 
-##How to contribute
+## How to contribute
 
 1. Check the [issues](https://github.com/AutoScout24/FeatureBee/issues) for stuff that needs to be done.
 2. Fork the repository

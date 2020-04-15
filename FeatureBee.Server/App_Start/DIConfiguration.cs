@@ -46,7 +46,7 @@
                 .Where(t => t.Name.EndsWith("Repository", StringComparison.Ordinal))
                 .AsImplementedInterfaces();
 
-            
+
             builder.RegisterType<FeatureApplicationServices>().AsImplementedInterfaces();
             builder.RegisterType<CommandSender>().As<ICommandSender>();
 
@@ -61,10 +61,10 @@
                 .As<IHistoryBroadcasterFor>();
 
             IContainer innerContainer = innerBuilder.Build();
-            var eventHandlers = new IEventHandler[] { 
-                new DatabaseEventHandler(innerContainer.Resolve<IEnumerable<IDatabaseBroadcasterFor>>()), 
+            var eventHandlers = new IEventHandler[] {
+                new DatabaseEventHandler(innerContainer.Resolve<IEnumerable<IDatabaseBroadcasterFor>>()),
                 new HubEventHandler(innerContainer.Resolve<IEnumerable<IHubBroadcasterFor>>()),
-                new HistoryEventHandler(innerContainer.Resolve<IEnumerable<IHistoryBroadcasterFor>>()) 
+                new HistoryEventHandler(innerContainer.Resolve<IEnumerable<IHistoryBroadcasterFor>>())
             };
             var dispatcher = new NEventStoreDispatcher(eventHandlers);
 

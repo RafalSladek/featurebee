@@ -10,7 +10,9 @@ namespace FeatureBee.Server.Models
         public FeatureBeeContext()
             : base("FeatureBeeContext")
         {
-            Database.SetInitializer(new CreateDatabaseIfNotExists<FeatureBeeContext>());
+            //Database.Log = s => Debug.WriteLine(s);
+            Database.SetInitializer<FeatureBeeContext>(null);
+            //Database.SetInitializer(new CreateDatabaseIfNotExists<FeatureBeeContext>());
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<FeatureBeeContext, Configuration>());
         }
 

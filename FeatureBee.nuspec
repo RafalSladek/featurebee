@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>@description@</description>
     <releaseNotes>@releaseNotes@</releaseNotes>
-    <copyright>Copyright AutoScout24 2013</copyright>
+    <copyright>Copyright AutoScout24 2020</copyright>
     <tags>FeatureBee FeatureToggle Toggle Bits Flags AutoScout24</tags>
     @dependencies@
   </metadata>

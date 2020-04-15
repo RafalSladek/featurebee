@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureBee.Client", "FeatureBee.Client\FeatureBee.Client.csproj", "{93EC90DF-046A-4355-84D8-9ED8A71D83D5}"
 EndProject
@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{5B9DC5
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FeatureBee.Server.Acceptance", "FeatureBee.Server.Acceptance\FeatureBee.Server.Acceptance.fsproj", "{8D3824F5-5FC7-4C94-B8E0-43786F126BD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatureBee.Client.Tests", "FeatureBee.Client.Tests\FeatureBee.Client.Tests.csproj", "{FFE5EA87-B92A-43D7-9522-0199BB35B462}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +49,10 @@ Global
 		{BC8B5EEB-7A51-4399-8EE6-F3B2D5124493}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC8B5EEB-7A51-4399-8EE6-F3B2D5124493}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC8B5EEB-7A51-4399-8EE6-F3B2D5124493}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D3824F5-5FC7-4C94-B8E0-43786F126BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D3824F5-5FC7-4C94-B8E0-43786F126BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D3824F5-5FC7-4C94-B8E0-43786F126BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D3824F5-5FC7-4C94-B8E0-43786F126BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE5EA87-B92A-43D7-9522-0199BB35B462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE5EA87-B92A-43D7-9522-0199BB35B462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE5EA87-B92A-43D7-9522-0199BB35B462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE5EA87-B92A-43D7-9522-0199BB35B462}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

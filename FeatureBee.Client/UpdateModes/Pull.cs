@@ -9,7 +9,7 @@ namespace FeatureBee.UpdateModes
 
     using FeatureBee.UpdateModes.FeatureCache;
     using FeatureBee.WireUp;
-    
+
     internal class Pull : IFeatureRepository
     {
         private static readonly TimeLimitedInMemoryFeatureBeeCache MemCache = new TimeLimitedInMemoryFeatureBeeCache(TimeSpan.FromMinutes(1));
@@ -21,8 +21,8 @@ namespace FeatureBee.UpdateModes
         public Pull(string url, bool withRefresh = true)
         {
             httpClient = new HttpClient();
-
-            featuresUri = new Uri(string.Format("{0}/api/features", url));
+            //featuresUri = new Uri(string.Format("{0}/api/features", url));
+            featuresUri = new Uri(url);
 
             if (withRefresh)
             {
